@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --white:#fff;
+    --black:rgb(51, 50, 50);
+    --orenge:rgb(240, 81, 33);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Cardo', serif;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+::selection{
+    background: var(--orenge);
+    color: var(--white);
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: var(--black);
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--orenge);
+    border-radius: 5rem;
+}
+
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    background:var(--orenge);
+    color: var(--white);
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    padding: .9rem 2rem;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background:var(--black);
+}
+
+.heading{
+    text-align: center;
+    color: var(--black);
+    font-size: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+
+
+/* header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 10000;
+    background: var(--white);
+    padding: 1rem;
+}
+.header .text{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    color: var(--black);
+}
+.header .text .logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+.header p{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+.header a {
+    text-decoration: underline;
+    color: var(--black);
+    font-size: 1.5rem;
+}
+.header a:hover{
+    color: var(--orenge);
+}
+
+/* slide */
+.slide{
+    min-height: 50vh;
+    padding-top: 12rem;
+    background: url(../images/bg_1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slide .content .circle{
+    background: rgb(190, 3, 97);
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    padding-top: 2rem;
+    position: relative;
+    left: 90rem;bottom: 3rem;
+}
+.slide .content .circle p{
+    text-align: center;
+    padding-top: 2rem;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+.slide .content .text{
+    position: relative;
+    bottom: 6rem;
+    text-align: center;
+    color: var(--white);
+}
+.slide .content .text .head1{
+    font-size: 1.5rem;
+}
+.slide .content .text .head2{
+    font-size: 5rem;
+}
+.slide .content .text .head3{
+    font-size: 2.5rem;
+}
+.slide .content .circle2{
+    /* background: rgb(4, 5, 104); */
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    padding-top: 2rem;
+    position: relative;left: 120rem;top: 6rem;
+    background-color: #e5e5f7;
+    opacity: 0.7;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #0510ec55, #0510ec );
+}
+
+
+/* sectionTwo */
+.sectionTwo .content{
+    max-width: 50rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+.sectionTwo .content p{
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+
+/* sectionTree */
+.sectionTree{
+    background: #dbdcf8;
+    padding: 2rem 20%;
+}
+.sectionTree .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 3.5rem;
+}
+.sectionTree .content img{
+    flex: 1 1 25rem;
+    padding: .5rem;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    border: 2px solid rgb(180, 42, 169);
+}
+.sectionTree .content .text{
+    flex: 1 1 45rem;
+    color: var(--black);
+}
+.sectionTree .content .text .text1{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.sectionTree .content .text .text2{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.sectionTree .content .text .text3{
+    font-size: 1.2rem;
+}
+.sectionTree .content .text .text3 span{
+    font-weight: bold;
+}
+
+/* sectionFour */
+.sectionFour{
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    color: var(--black);
+}
+.sectionFour .text{
+    /* max-width: 90rem; */
+    /* text-align: center; */
+    font-size: 2rem;
+    font-weight: 600;
+    /* padding-left: 40rem; */
+    max-width: 50rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+.sectionFour .band{
+    /* max-width: 80rem; */
+    font-size: 1.7rem;
+    font-weight: 600;
+    max-width: 55rem;
+    margin: 0 auto;
+    /* padding-left: 25rem; */
+    padding-bottom: 1rem;
+}
+.sectionFour .band span{
+    padding-right: 1rem;
+    color: var(--orenge);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.sectionFour .link{
+    text-align: center;
+    margin: 2rem auto;
+}
+
+/* SectionFive */
+.SectionFive {
+    background: linear-gradient(to right, #003366 34%, #3399ff 100%);
+}
+.SectionFive .text{
+    /* max-width: 90rem; */
+    color: var(--white);
+    font-size: 1.7rem;
+    /* text-align: center; */
+    /* padding-left: 45rem; */
+    max-width: 70rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+.SectionFive .link{
+    /* max-width: 90rem; */
+    color: var(--white);
+    font-size: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    /* text-align: center; */
+    /* padding-left: 45rem; */
+    max-width: 70rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+/* sectionsex */
+.sectionSex .heading2{
+    text-align: center;
+    color: var(--black);
+    font-size: 4rem;
+    padding-top: 4rem;
+}
+.sectionSex .two{
+    padding-top: 0;
+}
+.sectionSex .text{
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+    font-size: 2rem;
+    /* max-width: 100rem; */
+    /* text-align: center; */
+    /* padding-left: 35rem; */
+    max-width: 70rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sectionSex .text span{
+    color: var(--orenge);
+    font-weight: bold;
+}
+/* sectionSeven */
+.sectionSeven{
+    background: rgb(252, 242, 223);
+    margin-bottom: 2rem;
+}
+.sectionSeven .offer{
+    display: flex;
+    justify-content: flex-end;
+}
+.sectionSeven .offer p{
+    flex: 0 0 12rem;
+    background: var(--orenge);
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 2.5rem;
+}
+.sectionSeven p{
+    color: var(--black);
+    font-size: 4rem;
+    text-align: center;
+}
+.sectionSeven .link {
+    color: var(--orenge);
+    text-decoration: underline;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1rem;
+    text-transform: uppercase;
+}
+.sectionSeven img{
+    width: 15rem;
+    height: 100%;
+    position: relative;
+    left: 22rem;
+}
+
+
+.button{
+    text-align: center;
+    margin: 2rem auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* footer */
+.footer{
+    background: #eee;
+}
+.footer .logo{
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 2rem;
+}
+.footer .links{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    text-decoration: underline;
+}
+.footer .links a:hover{
+    color: var(--orenge);
+}
+.footer .text{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+
+    .slide .content .circle{
+        left: 70rem;
+    }
+    /* .slide .content .circle2{
+        left: 80rem;
+    } */
+    .sectionTree{
+        padding: 2rem 10%;
+    }
+    .sectionTree .content img{
+        display: none;
+    }
+    .sectionFour .text{
+        padding: 2rem;
+    }
+    .sectionFour .band{
+        padding-left: 2rem;
+    }
+    .SectionFive .text{
+        padding-left: 5rem;
+    }
+    .SectionFive .link{
+        padding-left: 5rem;
+    }
+    .sectionSex .text{
+        padding-left: 2rem;
+    }
+    .sectionSeven img{
+        left: 10rem;
+    }
+}
+
+@media (max-width:768px) {
+    .slide .content .circle{
+        left: 55rem;
+    }
+    /* .slide .content .circle2{
+        left: 61rem;
+    } */
+    .header{
+        padding: 2rem;
+    }
+    .sectionSeven img{
+        display: none;
+    }
+    .sectionSeven .link{
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+    .slide .content .circle{
+        display: none;
+    }
+    /* .slide .content .circle2{
+        display: none;
+    } */
+    .slide .content .text{
+        top: 6rem;
+    }
+    .sectionTree .content{
+        text-align: center;
+    }
+
+}
